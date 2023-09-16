@@ -1,0 +1,26 @@
+/* .comments .bg {
+  border-bottom: 2px solid white;
+  border-bottom-width: 10px;
+} */
+
+.underline-centered::after {
+  content: '';
+  display: block;
+  height: 4px; /* thickness of the underline */
+  background-color: currentColor; /* color of the underline (using the text color) */
+  width: 10%; /* a third of the text length */
+  margin: auto; /* center the underline */
+  position: relative;
+  top: 10px; /* adjust this value to position the underline below the text */
+}
+
+.latest::after {
+  content: '';
+  display: block;
+  height: 6px; /* thickness of the underline */
+  background-color: #ff5c58; /* color of the underline (using the text color) */
+  width: 10%; /* a third of the text length */
+  margin: auto; /* center the underline */
+  position: relative;
+  top: 10px; /* adjust this value to position the underline below the text */
+}
