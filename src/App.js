@@ -1,14 +1,15 @@
-import './App.css';
 import Footer from './footer';
 import NewsLetter from './newsletter';
 import Comments from './comments';
 import Latest from './latest';
 import Header from './header';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom';
+import './App.css';
 
 function App() {
   return (
-    
-
+  <Router>
+  
     <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -16,15 +17,22 @@ function App() {
       <title>Document</title>
     </head>
     <body>
+    
       <div className="parent">
-        <Header />
-        <Latest />
-        <Comments />
-        <NewsLetter/>
-        <Footer/>
+        <Switch>
+          <Route exact path="/">
+            <Header></Header>
+            <Latest></Latest>
+            <Comments></Comments>
+            <NewsLetter></NewsLetter>
+            <Footer></Footer>
+          </Route>
+        </Switch>
       </div>
     </body>
     </html>
+
+  </Router>
     
   );
 }

@@ -1,0 +1,50 @@
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import NewsLetter from "./newsletter";
+import Header from "./header";
+const useSaveEmail = (e) => {
+
+    const [newMail, setEmail] = useState('');
+    const [msg, setMsg] = useState('');
+    const [err, setErr] = useState(false);
+    const [isPending, setIsPending] = useState(false);
+    const [msgTimer, setMsgTimer] = useState('');
+    const history = useHistory();    
+
+
+    const MessageTimeOut = () => {
+        setTimeout(()=>{
+            setMsgTimer("hidden");
+        }, 1500);
+    }
+
+
+    e.preventDefault();
+    const email = { newMail };
+
+    setIsPending(true);             // make submit button disappear after i click submit
+
+    fetch('http://localhost:8050/emaillist', {
+        method: 'POST',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(email)
+    }).then(()=> {
+        console.log('mail added successfully')
+        setIsPending(false)         // make button appear after successful submission 
+        setMsg(`${email.email} has been added successfully`);
+        MessageTimeOut();
+        history.push('/');
+    }).catch(err => {
+        setErr(true);
+        console.log("Error: ", err.message);
+    });
+
+    return (
+        <div>
+            <NewsLetter logic={useSaveEmail}/>
+            <Header logic={useSaveEmail}/>
+        </div>
+    )
+}
+
+export default useSaveEmail;

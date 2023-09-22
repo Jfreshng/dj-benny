@@ -1,0 +1,104 @@
+{
+  "emaillist": [
+    {
+      "email": "testmail@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "testmail@gmail.com",
+      "id": 2
+    },
+    {
+      "newMail": "email@gmail.com",
+      "id": 3
+    },
+    {
+      "newMail": "email@gmail.com",
+      "id": 4
+    },
+    {
+      "newMail": "latest@yahoo.com",
+      "id": 5
+    },
+    {
+      "newMail": "hello@gmail.com",
+      "id": 6
+    },
+    {
+      "newMail": "hello@gmail.com",
+      "id": 7
+    },
+    {
+      "newMail": "email@mail.com",
+      "id": 8
+    },
+    {
+      "newMail": "email@mail.com",
+      "id": 9
+    },
+    {
+      "newMail": "email@mail.com",
+      "id": 10
+    },
+    {
+      "newMail": "levelemail@mail.com",
+      "id": 11
+    },
+    {
+      "newMail": "fromheader@mail.com",
+      "id": 12
+    },
+    {
+      "newMail": "hmm@gmail.com",
+      "id": 13
+    },
+    {
+      "newMail": "benny@hotmail.com",
+      "id": 14
+    },
+    {
+      "newMail": "testing@softmail.com",
+      "id": 15
+    },
+    {
+      "newMail": "email@mailer.com",
+      "id": 16
+    },
+    {
+      "newMail": "email@mailer.com",
+      "id": 17
+    },
+    {
+      "newMail": "mail.com",
+      "id": 18
+    },
+    {
+      "newMail": "email.com",
+      "id": 19
+    },
+    {
+      "newMail": "mail",
+      "id": 20
+    },
+    {
+      "newMail": "mail@mail.com",
+      "id": 21
+    },
+    {
+      "newMail": "postemail@gmail.com",
+      "id": 22
+    },
+    {
+      "newMail": "bennyyisready@mailer.com",
+      "id": 23
+    },
+    {
+      "newMail": "yo@gmail.com",
+      "id": 24
+    },
+    {
+      "newMail": "yo@gmail.com",
+      "id": 25
+    }
+  ]
+}

@@ -47,17 +47,17 @@ const Latest = () => {
     // }, []);
 
     return ( 
-        <div className="flex flex-col justify-center text-center">
-            <h2 className="text-5xl font-bold latest my-5">Latest Mix</h2>
+        <div className="flex flex-col justify-center text-center" id="latest">
+            <h2 className="text-5xl font-bold latest my-16">Latest Mix</h2>
 
             {/* fetch music from API */}
             {/* { loading && <div>Loading....</div> }
             { !err  && <div>{ err }</div>} */}
 
             {/* actuall tracks */}
-            <div className="sm:flex-col sm:mx-auto lg:flex lg:flex-wrap mt-12 lg:justify-center lg:items-center">
+            <div className="sm:columns-1 sm:mx-auto md:columns-2">
                 {Array.from({ length: musicCount }).map((_, index) => (
-                    <div className="w-1/2"><iframe src="https://audiomack.com/embed/shallipopi/song/ex-convict" key={ index } scrolling="no" scrollbars="no" frameborder="0" className="w-96 h-60 w-80  mx-auto my-3"></iframe></div>
+                    <div className=""><iframe src="https://audiomack.com/embed/shallipopi/song/ex-convict" key={ index } scrolling="no" scrollbars="no" frameborder="0" className="w-96 h-60 mx-auto p-2"></iframe></div>
                 ))}
             </div>
             <button onClick={()=> {viewAll(10)}}  className={`border border-[#ff5c58] rounded-full py-1 font-semibold text-xl mx-auto my-10 px-10 ${togMe}`}>View All</button>

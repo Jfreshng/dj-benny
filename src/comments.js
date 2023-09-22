@@ -19,8 +19,8 @@ const Comments = () => {
 
     return ( 
 
-        // change from static to data from some source 
-        <div className="comments bg-[#ff5c58] py-12 px-20">
+        // change from static to data from some source
+        <div className="comments bg-[#ff5c58] py-12 px-20" id="testimonials">
             <div className="text-center flex flex-col justify-center">
                 <h2 className="text-white text-4xl underline-centered font-semibold">Comments</h2>
             </div>
