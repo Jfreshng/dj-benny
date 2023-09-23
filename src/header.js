@@ -49,9 +49,9 @@ const Header = () => {
 
 
     return ( 
-        <header className="bg-[#ff5c58] w-[100vw] h-[100vh] text-white p-10" id="#home">
+        <header className="bg-[#ff5c58] w-[100vw] h-[100vh] text-white sm:p-10" id="#home">
 
-            <nav className="bg-[#FE8F8F] rounded-xl p-4 flex justify-between">
+            <nav className="bg-[#FE8F8F] sm:rounded-xl p-4 flex justify-between">
                 <img src={logo} alt="website logo" className="w-20 h-5 sm:w-20 sm:h-5 lg:w-36 lg:h-8"/>
                 <ul className="flex">
                     <li className="text-xs mr-2 sm:mr-2 lg:mr-10 sm:text-sm lg:text-xl"><Link to="#home" smooth>HOME</Link></li>
