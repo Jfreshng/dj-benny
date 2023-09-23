@@ -3,6 +3,7 @@ import NewsLetter from './newsletter';
 import Comments from './comments';
 import Latest from './latest';
 import Header from './header';
+import NotFound from './NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom';
 import './App.css';
 
@@ -26,6 +27,9 @@ function App() {
             <Comments></Comments>
             <NewsLetter></NewsLetter>
             <Footer></Footer>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </div>

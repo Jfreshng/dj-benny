@@ -45,16 +45,16 @@ const NewsLetter = () => {
     
 
     return ( 
-        <div className="sm:columns-1 sm:space-y-4 md:columns-2  gap-8 my-48 md:mx-8" id="subscribe">
+        <div className="flex flex-col text-center sm:flex sm:flex-row sm:justify-between sm:columns-1 sm:space-y-4 md:columns-2  gap-8 my-48 md:mx-8" id="subscribe">
             <div className="sm:text-center md:flex lg:text-start">
                 <div className="mx-auto">
-                    <h2 className="text-[#ff5c58] sm:text-2xl md:text-4xl font-bold">Sign Up To Newsletter</h2>
-                    <p className="text-sm sm:hidden md:inline-flex md:whitespace-break-spaces">Subscribe to receive info on our latest news and episodes</p>
+                    <h2 className="text-2xl text-[#ff5c58] sm:text-2xl md:text-4xl font-bold">Sign Up To Newsletter</h2>
+                    <p className="text-sm sm:text-left md:inline-flex md:whitespace-break-spaces">Subscribe to receive info on our latest news and episodes</p>
                 </div>
             </div>
 
-            <div className="sm:flex sm:justify-center">
-                <form className="" onSubmit={handleSubmit}>
+            <div className="flex flex-col sm:flex sm:justify-center">
+                <form className="mx-auto" onSubmit={handleSubmit}>
                     <div className="flex flex-col">
                         { msg && <div className={`bg-green-100 py-2 px-2 my-2 rounded-sm ${msgTimer}`}>Email added successfully</div> }
                         { err && <div className="bg-red-200 border-red-300">{ err }</div> }
